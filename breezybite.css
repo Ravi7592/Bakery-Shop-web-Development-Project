@@ -1,0 +1,79 @@
+/* start navbar */
+
+.navbar{
+    background-color:  white;
+    /* background-color: #E8A131; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    height: 80px;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030; 
+     
+  }  
+  div.collapse{
+    margin-left: 200px;
+  }
+   .nav-link{
+    margin-left: 30px;
+ }  
+ .nav-link{
+    transition: 0.5s;
+    
+ }
+ .nav-link:hover{
+    transform: scale(1.2);
+    color: #DAA520 !important;
+ }
+ 
+
+
+    ul.dropdown-menu{
+    background-color: #d5cdc5;
+    color: black;
+    width: 250px;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 30px;
+     
+   }
+   ul.dropdown-menu a{
+    transition: all 0.4s ease;
+   }
+   ul.dropdown-menu a:hover{
+    background-color: #917a36;
+    padding-left: 8px;
+    border-radius: 8px;
+   }
+   .bi-cart4{
+    color: black;
+    font-size: 30px;
+    
+    
+   }
+   .cart{
+   
+    transition:all 0.4s ease;
+     margin-right: 10px;
+   }
+   .cart:hover{
+    transform: scale(1.2);
+     
+   }
+   .login i{
+      font-size: 22px;
+      color: #DAA520;
+   }
+   .login{
+      transition: all 0.4s ease;
+      
+   }
+   .login:hover{
+      transform: scale(1.2);
+       
+   }
+   @media  (max-width:750px) {
+   .navbar {
+      background-color: #DAA520;
+   }
+      
+   }
+  /* end of the navbar */

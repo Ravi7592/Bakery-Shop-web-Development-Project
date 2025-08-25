@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="#bunPage">
+    <link rel="stylesheet" href="breezybite.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+<style>
+     
+</style>
+<body>
+  <!----------------------Start navbar------------------------>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="homePage.html"><h3>Breezy<span class="text-danger">Bite</h3></span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse h5" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="homePage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="AboutUsPage.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="galleryPage.html">Gallery</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link  active"  href="shopPage.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Shop
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="breadPage.html">Bread</a></li>
+              <li><a class="dropdown-item" href="bunPage.html">Bun</a></li>
+              <li><a class="dropdown-item" href="cakePage.html">Cakes</a></li>
+              <li><a class="dropdown-item" href="shorteatsPage.html">Shorteats</a></li>
+              <li><a class="dropdown-item" href="fastfoodPage.html">Fastfoods </a></li>
+              <li><a class="dropdown-item" href="softdrinksPage.html">Softdrinks </a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="ContactPage.html">Contact Us</a>
+          </li>  
+        </li>
+        
+        </ul>
+        <form class="d-flex" role="search">
+          <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+           
+            <a href="cart.html" class="cart"> <i class="bi bi-cart4"></i> </a>
+        
+          <button class="btn  text-dark display-4 login" type="button" onclick="document.location='signUp.html'" > 
+            <i class="bi bi-person-fill"></i> 
+            Register/Login
+          </button>
+        </form>
+      </div>
+    </div>
+</nav>
+<!----------------------End navbar-------------------------->
+
+
+<div class="container buttons mt-3">
+
+    <button type="button" class="btn border-warning btn-outline-warning text-dark menu-btn" onclick="document.location='breadPage.html'">Bread</button>
+    <button type="button" class="btn border-warning btn-outline-warning text-dark menu-btn" onclick="document.location='bunPage.html'">Buns</button>
+    <button type="button" class="btn border-warning btn-outline-warning text-dark menu-btn" onclick="document.location='shorteatsPage.html'">Shorteats</button>
+    <button type="button" class="btn border-warning btn-outline-warning text-dark menu-btn" onclick="document.location='fastfoodPage.html'">Fastfoods</button>
+    <button type="button" class="btn border-warning btn-outline-warning text-dark menu-btn" onclick="document.location='cakePage.html'">Cakes</button>
+    <button type="button" class="btn border-warning btn-outline-warning text-dark menu-btn" onclick="document.location='softdrinksPage.html'">Beverages</button>
+     
+
+ 
+
+</div>
+
+
+
+
+
+
+
+
+
+
+    <h1 class="product anim">Fastfoods</h1>
+    <div class="container product">
+        <div class="row">  
+            <div class="card anim"><!--Chiken pizza-->                   
+                <img src="images/FastFoods/Chiken_Pizza.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <H2 class=" ">Chiken Pizza Large</H2>
+                            <h3>Rs.3000.00</h3>
+                            <p> A flavorful delight featuring succulent chicken toppings on a crispy pizza crust, complemented by a blend of cheese and savory tomato sauce.</p>
+                            <form action="">
+                                <div class="quantity bg- ">
+                                    <label for="quantity" class="h4">Available</label><br>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="100">
+                                </div>  
+                                    <button type="submit" class="addtocart btn btn-warning  ">Add to Cart</button>
+                            </form>
+                </div>
+            </div>
+            
+            <div class="card anim"><!--Chiken pizza-->                 
+                <img src="images/FastFoods/Chiken_Pizza.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <H2 class=" ">Chiken Pizza Regular</H2>
+                            <h3>Rs.2500.00</h3>
+                            <p> A flavorful delight featuring succulent chicken toppings on a crispy pizza crust, complemented by a blend of cheese and savory tomato sauce.</p>
+                            <form action="">
+                                <div class="quantity bg- ">
+                                    <label for="quantity" class="h4">Available</label><br>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="100">
+                                </div>  
+                                    <button type="submit" class="addtocart btn btn-warning  ">Add to Cart</button>
+                            </form>
+                </div>
+            </div>
+
+            <div class="card anim"><!--Cheese pizza-->                   
+                <img src="images/FastFoods/Cheese_Pizza.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <H2 class=" ">Cheese Pizza Large</H2>
+                            <h3>Rs.2500.00</h3>
+                            <p>A classic pizza showcasing the simplicity of melted cheese over a perfectly baked crust, creating a gooey and satisfying culinary experience.</p>
+                            <form action="">
+                                <div class="quantity bg- ">
+                                    <label for="quantity" class="h4">Available</label><br>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="100">
+                                </div>  
+                                    <button type="submit" class="addtocart btn btn-warning  ">Add to Cart</button>
+                            </form>
+                </div>
+            </div>
+
+
+            <div class="card anim"><!--Cheese pizza-->                
+                <img src="images/FastFoods/Cheese_Pizza.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <H2 class=" "> Cheese pizza Regular</H2>
+                            <h3>Rs.2000.00</h3>
+                            <p> A classic pizza showcasing the simplicity of melted cheese over a perfectly baked crust, creating a gooey and satisfying culinary experience.</p>
+                            <form action="">
+                                <div class="quantity bg- ">
+                                    <label for="quantity" class="h4"> Available</label><br>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="100">
+                                </div>  
+                                    <button type="submit" class="addtocart btn btn-warning  ">Add to Cart</button>
+                            </form>
+                </div>
+            </div>
+
+
+
+            <div class="card anim"><!--Chicken Burger-->                
+                <img src="images/FastFoods/Category_Img.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <H2 class=" "> Chicken Burger </H2>
+                            <h3>Rs.1200.00</h3>
+                            <p> A juicy chicken patty nestled in a soft bun, accompanied by fresh vegetables, delivering a delicious combination of textures and flavors.</p>
+                            <form action="">
+                                <div class="quantity bg- ">
+                                    <label for="quantity" class="h4">Available</label><br>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="100">
+                                </div>  
+                                    <button type="submit" class="addtocart btn btn-warning  ">Add to Cart</button>
+                            </form>
+                </div>
+            </div>
+
+
+            <div class="card anim"><!--Cheese Burger-->                
+                <img src="images/FastFoods/Cheese_Burger.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <H2 class=" "> Cheese Burger </H2>
+                            <h3>Rs.1100.00</h3>
+                            <p> A timeless favorite featuring a beef patty layered with melted cheese, lettuce, and condiments, providing a savory and comforting taste.</p>
+                            <form action="">
+                                <div class="quantity bg- ">
+                                    <label for="quantity" class="h4">Available</label><br>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="100">
+                                </div>  
+                                    <button type="submit" class="addtocart btn btn-warning  ">Add to Cart</button>
+                            </form>
+                </div>
+            </div>
+
+
+
+
+            <div class="card anim"><!--Chiken Submarine-->                
+                <img src="images/FastFoods/Chicken_Submarine.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <H2 class=" "> Chiken Submarine </H2>
+                            <h3>Rs.1500.00</h3>
+                            <p>A sub sandwich filled with tender chicken, fresh veggies, and savory sauces, creating a hearty and satisfying meal.</p>
+                            <form action="">
+                                <div class="quantity bg- ">
+                                    <label for="quantity" class="h4">Available</label><br>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="100">
+                                </div>  
+                                    <button type="submit" class="addtocart btn btn-warning  ">Add to Cart</button>
+                            </form>
+                </div>
+            </div>
+
+
+
+            <div class="card anim"><!--Vegetable Submarine-->                
+                <img src="images/FastFoods/Vegetable_Submarine.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <H2 class=" "> Vegetable Submarine </H2>
+                            <h3>Rs.1200.00</h3>
+                            <p>Packed with a medley of fresh vegetables, sauces, and sometimes cheese, this submarine sandwich offers a delightful and  vegetarian option.</p>
+                            <form action="">
+                                <div class="quantity bg- ">
+                                    <label for="quantity" class="h4">Available</label><br>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="100">
+                                </div>  
+                                    <button type="submit" class="addtocart btn btn-warning  ">Add to Cart</button>
+                            </form>
+                </div>
+            </div>
+
+
+
+
+
+        </div>    
+    </div>
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

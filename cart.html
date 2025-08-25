@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="breezybite.css">
+    <title>BreezyBite</title>
+</head>
+
+<body>
+   <!----------------------Start navbar------------------------>
+   <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="homePage.html"><h3>Breezy<span class="text-danger">Bite</h3></span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse h5" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="homePage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="AboutUsPage.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="galleryPage.html">Gallery</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link  active"  href="shopPage.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Shop
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="breadPage.html">Bread</a></li>
+              <li><a class="dropdown-item" href="bunPage.html">Bun</a></li>
+              <li><a class="dropdown-item" href="cakePage.html">Cakes</a></li>
+              <li><a class="dropdown-item" href="shorteatsPage.html">Shorteats</a></li>
+              <li><a class="dropdown-item" href="fastfoodPage.html">Fastfoods </a></li>
+              <li><a class="dropdown-item" href="softdrinksPage.html">Softdrinks </a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="ContactPage.html">Contact Us</a>
+          </li>  
+        </li>
+        
+        </ul>
+        <form class="d-flex" role="search">
+          <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+           
+            <a href="cart.html" class="cart"> <i class="bi bi-cart4"></i> </a>
+        
+          <button class="btn  text-dark display-4 login" type="button" onclick="document.location='signUp.html'" > 
+            <i class="bi bi-person-fill"></i> 
+            Register/Login
+          </button>
+        </form>
+      </div>
+    </div>
+</nav>
+<!----------------------End navbar-------------------------->
+ 
+<!------------------- your cart ------->
+<div class="container your-cart">
+    <div class="row">
+        <div class="col-lg-8 col-md-7 col-sm-12 border shadow p-4 your-cart-item">
+            <h1 class="text-center fw-bold mt-1">Cart</h1>
+            <hr style="margin-top: 40px; margin-bottom: 40px;">
+            <table>
+              <tr>
+                <th style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">Product</th>
+                <th>Quantity</th>
+                <th >Price</th>
+                <th style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;">Checkout</th>
+              </tr>
+              <tr>
+                <td>
+                  <div class="cart-info">
+                    <img src="images/FastFoods/Chiken_Pizza.jpg" class="card-img-top" alt="...">
+                    <div>
+                      <p class="fw-bold">Chiken Pizza Large</p>
+                      <small>Rs.3000.00</small> <br>
+                      <a href="#">Remove</a>
+                    </div>
+                  </div>
+                </td>
+                <td><input type="number" value="1" min="1"></td>
+                <td>Rs.3000.00</td>
+                <td><a href="#" class="Checkout shadow " onclick="order()">Order Now</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="cart-info">
+                    <img src="images/FastFoods/Category_Img.jpg" class="card-img-top" alt="...">
+                    <div>
+                      <p class="fw-bold">Chicken Burger</p>
+                      <small>Rs.1200.00</small> <br>
+                      <a href="#">Remove</a>
+                    </div>
+                  </div>
+                </td>
+                <td><input type="number" value="1" min="1"></td>
+                <td>Rs.1200.00</td>
+                <td><a href="#" class="Checkout shadow" onclick="order()">Order Now</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="cart-info">
+                    <img src="images/FastFoods/Vegetable_Submarine.png" class="card-img-top" alt="...">
+                    <div>
+                      <p class="fw-bold">Vegetable Submarine</p>
+                      <small >Rs.1200.00</small> <br>
+                      <a href="#">Remove</a>
+                    </div>
+                  </div>
+                </td>
+                <td><input type="number" value="1" min="1"></td>
+                <td>Rs.1200.00</td>
+                <td><a href="#" class="Checkout shadow" onclick="order()">Order Now</a></td>
+              </tr>
+            </table>
+            
+        </div>
+        <div class="col-lg-4 col-md-5 col-sm-12 border shadow p-4 order-sum">
+            <h1 class="text-center fw-bold">Order Summary</h1>
+            <hr style="margin-top: 40px; margin-bottom: 40px;">
+            <table>
+              <tr>
+                <td>Subtotal :</td>
+                <td>Rs.5400.00</td>
+              </tr>
+              <tr>
+                <td>Tax :</td>
+                <td>Rs.150.00</td>
+              </tr>
+              <tr>
+                <td>Delivery Charges :</td>
+                <td>Rs.350.00</td>
+              </tr>
+              <tr>
+                <td style="border-top: 2px solid;" class="fw-bold">Total :</td>
+                <td class="fw-bold" style="border-top: 2px solid;">Rs.5900.00</td>
+              </tr>
+            </table>
+              <div class="order-sum-btn">
+              <button class="shadow" onclick="cancel()">Cancel</button>
+              <button class="shadow"onclick="order()">Order Now</button> 
+           </div>
+        </div>
+    </div>
+</div>
+<!------------ end your cart ------------>
+
+
+  <div class="contactsocial m-3">
+    <p class="text-center display-6"> CONNECT WITH US</p>
+    <div class="a-icons">
+    <a href="#" ><i class="bi bi-facebook "></i> </a>
+    <a href="#"><i class="bi bi-instagram "></i></a>
+    <a href=""><i class="bi bi-twitter"></i></a>
+    <a href=""><i class="bi bi-pinterest"></i></a>
+    </div>
+
+  </div>
+
+
+<script>
+  function order(){
+      alert('Your Ordere is  Successfully!')
+  }
+</script>
+<script>
+  function cancel(){
+      alert('Your Order is Cancel.')
+  }
+</script>
+
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

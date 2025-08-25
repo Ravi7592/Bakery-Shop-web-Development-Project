@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+     <link rel="stylesheet" href="breezybite.css">
+     <link rel="stylesheet" href="product.css">
+</head>
+<style>
+    
+    
+</style>
+<body class="product">
+<!----------------------Start navbar------------------------>
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="homePage.html"><h3>Breezy<span class="text-danger">Bite</h3></span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse h5" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="homePage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="AboutUsPage.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="galleryPage.html">Gallery</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link  active"  href="shopPage.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Shop
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="breadPage.html">Bread</a></li>
+              <li><a class="dropdown-item" href="bunPage.html">Bun</a></li>
+              <li><a class="dropdown-item" href="cakePage.html">Cakes</a></li>
+              <li><a class="dropdown-item" href="shorteatsPage.html">Shorteats</a></li>
+              <li><a class="dropdown-item" href="fastfoodPage.html">Fastfoods </a></li>
+              <li><a class="dropdown-item" href="softdrinksPage.html">Softdrinks </a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="ContactPage.html">Contact Us</a>
+          </li>  
+        </li>
+        
+        </ul>
+        <form class="d-flex" role="search">
+          <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+           
+            <a href="cart.html" class="cart"> <i class="bi bi-cart4"></i> </a>
+        
+          <button class="btn  text-dark display-4 login" type="button" onclick="document.location='signUp.html'" > 
+            <i class="bi bi-person-fill"></i> 
+            Register/Login
+          </button>
+        </form>
+      </div>
+    </div>
+</nav>
+<!----------------------End navbar-------------------------->
+
+<div class="container buttons mt-3">
+
+    <button type="button" class="btn border-warning btn-outline-warning text-dark menu-btn" onclick="document.location='breadPage.html'">Bread</button>
+    <button type="button" class="btn border-warning btn-outline-warning text-dark menu-btn" onclick="document.location='bunPage.html'">Buns</button>
+    <button type="button" class="btn border-warning btn-outline-warning text-dark menu-btn" onclick="document.location='shorteatsPage.html'">Shorteats</button>
+    <button type="button" class="btn border-warning btn-outline-warning text-dark menu-btn" onclick="document.location='fastfoodPage.html'">Fastfoods</button>
+    <button type="button" class="btn border-warning btn-outline-warning text-dark menu-btn" onclick="document.location='cakePage.html'">Cakes</button>
+    <button type="button" class="btn border-warning btn-outline-warning text-dark menu-btn" onclick="document.location='softdrinksPage.html'">Beverages</button>
+     
+
+ 
+
+</div>
+
+
+<!--------- Start products---------->
+<h1 class="product anim">Bread</h1>
+<div class="container product">
+        <div class="row"> 
+            <div class="card anim"><!--full bread-->                  
+                <img src="images/Breads/Full_Bread.jpg" class="card-img-top responsive" alt="...">
+                <div class="card-body">
+                    <H2 class=" ">Full Bread</H2>
+                            <h3>Rs.110.00</h3>
+                            <p>Our bread at BreezyBite Bakery is baked fresh daily and made with the highest quality ingredients. 
+                                We offer a variety of full breads, each with a unique flavor profile, perfect for sandwiches, toasting, or enjoying on its own.</p>
+                            <form action="">
+                                <div class="quantity bg- ">
+                                    <label for="quantity" class="h4">Available</label><br>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="100">
+                                </div>  
+                                    <button type="submit" class="addtocart btn btn-warning  ">Add to Cart</button>
+                            </form>
+                </div>
+            </div>
+            
+            <div class="card anim"><!--Sliced bread-->                   
+                <img src="images/Breads/Sliced_Bread.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <H2 class=" ">Sliced bread</H2>
+                            <h3>Rs.180.00</h3>
+                            <p>Our bread at BreezyBite Bakery is baked fresh daily and made with the highest quality ingredients. 
+                                We offer a variety of sliced bread, each with a unique flavor profile, perfect for sandwiches, toasting, or enjoying on its own.</p>
+                            <form action="">
+                                <div class="quantity bg- ">
+                                    <label for="quantity" class="h4">Available</label><br>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="100">
+                                </div>  
+                                    <button type="submit" class="addtocart btn btn-warning  ">Add to Cart</button>
+                            </form>
+                </div>
+            </div>
+
+            <div class="card anim"><!--Ross bread-->                   
+                <img src="images/Breads/Ross_Bread.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <H2 class=" ">Sliced bread</H2>
+                            <h3>Rs.130.00</h3>
+                            <p>Our bread at BreezyBite Bakery is baked fresh daily and made with the highest quality ingredients. 
+                                We offer a variety of ross bread, each with a unique flavor profile, perfect for sandwiches, toasting, or enjoying on its own.</p>
+                            <form action="">
+                                <div class="quantity bg- ">
+                                    <label for="quantity" class="h4">Available</label><br>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="100">
+                                </div>  
+                                    <button type="submit" class="addtocart btn btn-warning  ">Add to Cart</button>
+                            </form>
+                </div>
+            </div>
+
+        </div>    
+</div>
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

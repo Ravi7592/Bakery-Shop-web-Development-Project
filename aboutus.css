@@ -1,0 +1,134 @@
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+div.about{
+    width: 100%;
+    background-color:#E8DBCD;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border-radius: 10px;
+    margin-top: 120px;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+}
+div.image{
+    width: 650px;          
+}
+div.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 10px;   
+    animation-delay:0.5s;  
+}
+div.para{      
+    margin-top: 35px;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 30px;   
+}
+div.para p{
+    font-size: 20px;
+    animation-delay:1.1s;
+}
+div.para {
+  animation-delay:0.5s;
+}
+div.para h1{
+  animation-delay:0.9s;
+}
+div.para h3{
+  animation-delay:0.7s;
+}
+div.card{
+    width: 100%;
+     
+    margin: 20px 40px 20px 20px;
+    margin-left: 40px; 
+    margin-top: 20px;
+}
+.reveal{
+position: relative;
+transform: translateY(100px);
+opacity: 0;
+transition: all 0.9s ease;
+}
+.reveal.active{
+transform: translateY(0);
+opacity: 1;
+}
+
+.anim{
+opacity: 0;
+transform: translateY(50px);
+animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+100%{
+    opacity: 1;
+    transform: translateY(0);
+
+  }
+}
+div.container.chef{
+    background-color: #E8DBCD;
+    margin-top: 60px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+    }
+.chef img{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height:600px ;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    margin-top: 10px;
+    }
+.text {
+        color: rgb(16, 15, 15);
+        font-size: 30px;
+        padding: 16px 32px; 
+        text-align: center;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+/* Contact Social section */
+div.contactsocial{
+    margin-bottom: 20px;
+    }
+div.a-icons a{
+    font-size: 30px;
+    text-decoration: none;
+    padding-left: 20px;
+    color: black;      
+    }
+div.a-icons a:hover{
+    transform: scale(1.2);
+    color: #DAA520;
+    }
+div.a-icons a{
+     transition: 0.5s;
+    }
+div.a-icons{
+    display: flex;
+    justify-content: center;
+    }
+@media screen and (max-width:1386px) {
+        div.about{
+            display: block;
+            width: 100%;
+        }
+        div.img{
+            width: 50%;     
+        }
+        div.img img{
+            width: 50%;
+            border-radius: 10px; 
+        }
+        div.container-review{
+            width: 100%;
+            height: 400px;
+        }
+        }

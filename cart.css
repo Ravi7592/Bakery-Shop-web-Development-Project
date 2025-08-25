@@ -1,0 +1,141 @@
+.your-cart{
+    margin-top: 150px;
+}
+.your-cart-item, .order-sum{
+    height: 550px;
+    overflow: auto;
+    margin: 0;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cart-info img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+th{
+    font-size: 20px;
+    padding: 10px;
+     
+}
+th:last-child{
+    text-align: center;
+}
+td{
+    padding:20px 20px 10px 2px;
+}
+td input{
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #DAA520;
+    font-size: 12px;
+}
+.Checkout{
+    display: flex;
+    border-radius: 30px;
+    margin-left: 40px;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    font-weight: 500;
+    width: 150px;
+    height: 40px;
+    padding: 6px;
+    font-weight: bold;
+    background-color: #DAA520;
+}
+.Checkout:hover{
+    background-color: #ffcd39;
+}
+.order-sum td{
+    font-size: 20px;
+}
+.order-sum td:last-child{
+    text-align: end;
+}
+.order-sum td:first-child{
+    font-weight: 500;
+}
+.order-sum-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.order-sum button{
+    margin: 50px 10px 0 20px;
+    background-color: #DAA520;
+    border: 2px solid #DAA520;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+}
+.order-sum button:hover{
+    background-color: rgb(255, 205, 57);
+}
+div.contactsocial{
+    margin-bottom: 20px;
+}
+div.a-icons a{
+    font-size: 30px;
+    text-decoration: none;
+    padding-left: 20px;
+    color: black;
+    
+           
+}
+div.a-icons a:hover{
+ transform: scale(1.2);
+ color: #DAA520;
+}
+div.a-icons a{
+ transition: 0.5s;
+}
+div.a-icons{
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (min-width: 280px) and (max-width: 912px){
+    .order-sum{
+        margin-top: 60px;
+        width: 100%;
+    }
+    .your-cart-item{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 280px) and (max-width: 600px){
+    .cart-info img{
+        width: 50px;
+        height: 50px;
+        margin-right: 5px;
+    }
+    th, td{
+        font-size: 15px;
+    }
+    .Checkout{
+        margin-left: 10px;
+        font-size: 15px;
+        width: 100px;
+        height: 30px;
+    }
+}
+@media (max-width: 300px){
+    .order-sum td{
+        font-size: 12px;
+    }
+    .order-sum button{
+        font-size: 13px;
+    }
+} 
